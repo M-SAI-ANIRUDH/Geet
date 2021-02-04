@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlbumDetails">
+
+    <ImageView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/album_photo"
+        android:src="@drawable/musicmsa"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/album_grad"
+        android:src="@drawable/gradient_bg"/>
+    <RelativeLayout
+        android:id="@+id/album_grado"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/album_grad"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/album_grado"/>
+
+</RelativeLayout>
